@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #440244;
+}
+main{
+    width: 40vw;
+    height: auto;
+    text-align: center;
+    background-color:#e2e2b9 ;
+    border: solid #2d0850;
+    border-width: .5rem;
+    border-radius: 1rem;
+    padding: 2rem 5rem;
+    color: #1e2730;
+}
+h2{
+    font-size: 2.2rem;
+    margin: 2rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.8rem;
+}
+.image{
+    width: 90%;
+    max-height: 22rem;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+}
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+button{
+    min-width: 28rem;
+    background-image: linear-gradient(92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%);
+    border-radius: 0.8rem;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    text-transform: capitalize;
+    font-family:'Josefin Sans', sans-serif ;
+}
+button:hover{
+    box-shadow: rgba(80, 63, 205, 0.2) 0 1px 30px;
+    transition-duration: 0.1s ;
+}
+button:last-child{
+    background: #2d0850;
+    margin-bottom: 0;
+}
+/*-------------------------
+    Game Area
+--------------------------*/
+#game-area{
+    /* height: 35vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#new-game-button button{
+    margin: 2rem 0;
+}
+input{
+    border: 0.1rem solid lightgray;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    font-family:'Josefin Sans', sans-serif ;
+}
+.status{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.info span{
+    font-size: 2rem;
+    color: #ff0511
+}
+@media screen and (max-width:1200px) {
+    main{
+        height: 95vh;
+        width: 50vw;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .image{
+        width: 30rem;
+        height: 35vh;
+    }
+    
+    button{
+        min-width: 25rem;
+        padding: 1.5rem 1rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    main{
+        padding: 2rem 3rem;
+        width: 60vw;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+    
+    button{
+        padding: 2rem 4rem;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .image{
+        width: 20rem;
+        height: 35vh;
+    }
+    #text-output{
+        font-size: 2rem;
+    }
+    input{
+        width: 19rem;
+    }
+    .info{
+        display: block;
+    }
+    button{
+        padding: 2rem 2rem;
+    }
+    #new-game-button button{
+        margin: 2rem 0;
+        min-width: 20rem;
+    }
+}
+@media screen and (max-width:425px) {
+    .image{
+        width: 16rem;
+        height: 35vh;
+        margin: 0;
+        padding: 0;
+    }
+    #new-game-button button{
+        margin: 2rem 0;
+        min-width: 15rem;
+    }
+    input{
+        width: 15rem;
+    }
+    button{
+        min-width: 15rem;
+        font-size: 1.5rem;
+        padding: 2rem 1rem;
+    }
+    .info{
+        margin: 0;
+    }
+    .info span, .info p{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:320px) {
+    main{
+        height: 85vh;
+    }
+    h2{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    .image{
+        width: 12rem;
+        margin: 0;
+        padding: 0;
+    }
+    #new-game-button button{
+        margin: 2rem 0;
+        min-width: 15rem;
+    }
+    input{
+        width: 12rem;
+        font-size: 1rem;
+    }
+    .info{
+        margin: 0;
+    }
+    .info span, .info p{
+        font-size: 1.2rem;
+    }
+    button{
+        min-width: 15rem;
+        font-size: 1.5rem;
+        padding: 2rem 1rem;
+    }
+}
